@@ -65,15 +65,17 @@ def Q2(l):
 
 	return ""
 #main program-->
-def print_pattern(length):
+def print_pattern(length,fun):
     if length<1:
         return "Enter a number greater than equals to 1"
     if length%1!=0:
         return "Provide positive integer value greater than equal to 1"
     else:
-        return Q1(length) 
-	
+        if fun == Q1:
+            return Q1(int(length))
+        else:
+            return Q2(int(length))
+            
 
-
-print(Q1(3))
-# print(Q2(2))
+print(print_pattern(4.0,Q1))
+print(print_pattern(5.0,Q2))
