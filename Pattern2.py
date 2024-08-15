@@ -75,5 +75,5 @@ def print_pattern(length):
 	
 
 
-print(Q1(2))
+print(Q1(3))
 # print(Q2(2))
